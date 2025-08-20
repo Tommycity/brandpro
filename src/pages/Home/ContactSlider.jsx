@@ -41,7 +41,7 @@ export const ContactSlider = () => {
 
       <div
         ref={sliderRef}
-        className="flex gap-8 overflow-x-auto hide-scrollbar scroll-smooth"
+        className="flex gap-8 overflow-x-auto bg-red-700 hide-scrollbar scroll-smooth"
       >
         {contacts.map((contact, i) => (
           <div
