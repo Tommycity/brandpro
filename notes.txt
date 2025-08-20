@@ -1,0 +1,11 @@
+yournsme.com
+
+linux (5 years)
+- ubuntu (sudo)
+- kali (peneration testing, pen testers)
+- red hat linux ()
+
+#reboot 
+
+- Git (CI/CD continous integration, continous deployment)
+- Deployment

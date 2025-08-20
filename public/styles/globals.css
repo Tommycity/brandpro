@@ -1,0 +1,115 @@
+@import "tailwindcss";
+@import "./ripple.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply text-sm text-[#666666] m-0 p-0 overflow-x-hidden;
+}
+/* 
+div,
+p {
+  @apply;
+} */
+.container {
+  @apply p-5 md:p-20 lg:p-5;
+}
+.button-gradient {
+  background: #ff930f;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 147, 15) 0%,
+    rgba(255, 46, 46, 255) 0%,
+    rgba(255, 111, 60, 255) 41%,
+    rgba(255, 249, 91, 1) 100%,
+    rgba(255, 248, 90, 255) 100%
+  );
+}
+
+.app-btn-white-bg:hover {
+  background: #ff930f;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 147, 15) 0%,
+    rgba(255, 46, 46, 255) 0%,
+    rgba(255, 111, 60, 255) 41%,
+    rgba(255, 249, 91, 1) 100%,
+    rgba(255, 248, 90, 255) 100%
+  );
+}
+
+.investing-circle:hover {
+  background: #ff930f;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 147, 15) 0%,
+    rgba(255, 46, 46, 255) 0%,
+    rgba(255, 111, 60, 255) 41%,
+    rgba(255, 249, 91, 1) 100%,
+    rgba(255, 248, 90, 255) 100%
+  );
+}
+
+.header-menu-link {
+  @apply uppercase hover:text-[#da4141] ease-in duration-500 font-medium cursor-pointer;
+}
+
+.primary-color {
+  @apply text-[#ee682f];
+}
+
+.bouquet-image {
+  background: url(.././imgs/home/bouquet-bg1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-us-hero-image {
+  background: url(.././imgs/home/about-us-hero-image.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-us-vision-image {
+  background: url(.././imgs/home/vision.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-us-mision-image {
+  background: url(.././imgs/home/mission.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hoveringEffect {
+  @apply group-hover:scale-110 transition-transform ease-in-out duration-500;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes swing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.swing {
+  animation: swing 2s infinite ease-in-out;
+}
