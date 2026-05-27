@@ -34,7 +34,7 @@ export const BlogMain = () => {
             >
               <div className="overflow-hidden rounded-3xl group">
                 <img
-                  src={`/imgs/home/${blog.image}`}
+                  src={`/imgs/new-images/${blog.image}`}
                   alt={blog?.title}
                   className="h-80 w-full object-cover rounded-3xl group-hover:scale-110 transition-transform duration-500"
                 />

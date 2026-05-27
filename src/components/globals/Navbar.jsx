@@ -9,14 +9,10 @@ import { MdMenu } from "react-icons/md";
 
 // Navbar component
 export const Navbar = () => {
-  // dropdownOpen controls which dropdown is open: null (none), 'menu', or 'saudi'
-  const [dropdownOpen, setDropdownOpen] = useState(null); // null | 'menu' | 'saudi'
-  // submenuOpenIndex controls which submenu is open in mobile menu (null or index)
-  const [submenuOpenIndex, setSubmenuOpenIndex] = useState(null); // null or index
-  // scrolled controls navbar background color on scroll
+  const [dropdownOpen, setDropdownOpen] = useState(null);
+  const [submenuOpenIndex, setSubmenuOpenIndex] = useState(null);
   const [scrolled, setScrolled] = useState(false);
 
-  // Effect to change navbar style when scrolling
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -25,10 +21,12 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Effect to close dropdowns when clicking outside
+  const toggleDropdown = (key) => {
+    setDropdownOpen((prev) => (prev === key ? null : key));
+  };
+
   useEffect(() => {
     const handleClick = (e) => {
-      // If click is NOT inside a dropdown trigger or dropdown content, close all dropdowns and submenus
       if (
         !e.target.closest(".dropdown-trigger") &&
         !e.target.closest(".dropdown-content")
@@ -50,9 +48,9 @@ export const Navbar = () => {
       {/* logo */}
       <div className=" w-[30%] lg:w-[10%]">
         <img
-          src="/imgs/home/tss-logo-logo_headers_preview.webp"
+          src="/public/imgs/new-images/BP_white_logo.png"
           alt=""
-          className=""
+          className="w-[100px]"
         />
       </div>
 
@@ -61,23 +59,18 @@ export const Navbar = () => {
         {middleMenuData.map((item, index) => (
           <div key={index} className="">
             {item?.children ? (
-              // Dropdown trigger for menu
               <div
                 className="relative uppercase dropdown-trigger"
-                // Toggle menu dropdown: open if closed, close if open
-                onClick={() =>
-                  setDropdownOpen(dropdownOpen === "menu" ? null : "menu")
-                }
+                onClick={() => toggleDropdown("menu")}
               >
                 <div className="flex items-center gap-2 cursor-pointer header-menu-link">
                   <span className="">{item?.title}</span>
                   <TiArrowSortedDown className="" />
                 </div>
 
-                {/* Dropdown content for menu, only visible if dropdownOpen === 'menu' */}
                 <div
                   className={
-                    dropdownOpen === "menu"
+                    dropdownOpen && dropdownOpen === "menu"
                       ? "absolute bg-white shadow-2xl py-3 px-2 rounded-md text-black flex flex-col gap-1 top-[30px] -left-20 z-10 dropdown-content"
                       : "hidden"
                   }
@@ -104,23 +97,18 @@ export const Navbar = () => {
 
       {/* right-aside-menu */}
       <div className="hidden w-[25%] lg:w-[32%] lg:flex items-center justify-end gap-4">
-        {/* Dropdown trigger for SAUDI */}
         <div className="relative dropdown-trigger">
           <div
             className="flex items-center gap-2 cursor-pointer header-menu-link"
-            // Toggle SAUDI dropdown: open if closed, close if open
-            onClick={() =>
-              setDropdownOpen(dropdownOpen === "saudi" ? null : "saudi")
-            }
+            onClick={() => toggleDropdown("saudi")}
           >
             <span className="">SAUDI</span>
             <TiArrowSortedDown className="" />
           </div>
 
-          {/* Dropdown content for SAUDI, only visible if dropdownOpen === 'saudi' */}
           <div
             className={
-              dropdownOpen === "saudi"
+              dropdownOpen && dropdownOpen === "saudi"
                 ? "absolute bg-white shadow-2xl py-3 px-2 rounded-md text-black flex flex-col gap-1 top-[30px] -left-2 z-10 dropdown-content"
                 : "hidden"
             }
@@ -145,11 +133,9 @@ export const Navbar = () => {
       </div>
 
       {/* responsive header section for mobile */}
-
-      {/* trigram menu for mobile, toggles menu dropdown */}
       <div
         className="text-[#ff930f] text-4xl md:text-6xl lg:hidden dropdown-trigger"
-        onClick={() => setDropdownOpen(dropdownOpen === "menu" ? null : "menu")}
+        onClick={() => toggleDropdown("menu")}
       >
         <MdMenu />
       </div>
@@ -157,23 +143,21 @@ export const Navbar = () => {
       {/* the-white-background-hover.menu for mobile, shows menu dropdown if open */}
       <div
         className={
-          dropdownOpen === "menu"
+          dropdownOpen && dropdownOpen === "menu"
             ? "absolute top-2 right-1 left-1 md:right-4 md:mr-0 mx-auto bg-white w-[94vw] md:w-[50vw] flex items-start justify-between text-black py-5 px-5 lg:hidden "
             : "hidden"
         }
       >
         <div className="w-[80%] flex flex-col">
-          {/* top: menu items */}
           <div className="flex flex-col gap-4">
             {middleMenuData.map((item, index) => (
               <div key={index} className="">
                 {item?.children ? (
-                  // Dropdown trigger for submenu (mobile)
                   <div
                     className="relative uppercase dropdown-trigger"
                     onClick={() =>
                       setSubmenuOpenIndex(
-                        submenuOpenIndex === index ? null : index
+                        submenuOpenIndex === index ? null : index,
                       )
                     }
                   >
@@ -182,7 +166,6 @@ export const Navbar = () => {
                       <TiArrowSortedDown className="" />
                     </div>
 
-                    {/* Dropdown content for submenu (mobile) */}
                     <div
                       className={
                         submenuOpenIndex === index
@@ -215,13 +198,14 @@ export const Navbar = () => {
 
           {/* bottom: SAUDI dropdown and other items (mobile) */}
           <div className="flex flex-col gap-4">
-            {/* Dropdown trigger for SAUDI (mobile) */}
             <div className="relative dropdown-trigger">
               <div
                 className="flex items-center gap-2 cursor-pointer header-menu-link mt-4"
                 onClick={() =>
                   setSubmenuOpenIndex(
-                    submenuOpenIndex === "saudi" ? null : "saudi"
+                    submenuOpenIndex && submenuOpenIndex === "saudi"
+                      ? null
+                      : "saudi",
                   )
                 }
               >
@@ -229,10 +213,9 @@ export const Navbar = () => {
                 <TiArrowSortedDown className="" />
               </div>
 
-              {/* Dropdown content for SAUDI (mobile) */}
               <div
                 className={
-                  submenuOpenIndex === "saudi"
+                  submenuOpenIndex && submenuOpenIndex === "saudi"
                     ? "absolute bg-white shadow-2xl py-3 px-2 rounded-md text-black flex flex-col gap-1 top-[55px] -left-2 z-10 dropdown-content"
                     : "hidden"
                 }
@@ -260,9 +243,7 @@ export const Navbar = () => {
         {/* mobile-menu button, toggles menu dropdown */}
         <div
           className="text-[#ff930f] text-4xl lg:hidden dropdown-trigger"
-          onClick={() =>
-            setDropdownOpen(dropdownOpen === "menu" ? null : "menu")
-          }
+          onClick={() => toggleDropdown("menu")}
         >
           <MdMenu />
         </div>

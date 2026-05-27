@@ -24,11 +24,11 @@ export const PortfolioContent = () => {
       <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-7">
         {portfoliaCardData?.map((item, i) => (
           <div key={i} className="w-full flex flex-col gap-4">
-            <div className="overflow-hidden group rounded-2xl">
+            <div className="overflow-hidden group rounded-2xl h-[600px]">
               <img
-                src={`/imgs/home/${item?.image}`}
+                src={`/imgs/new-images/${item?.image}`}
                 alt=""
-                className="group-hover:scale-110 transition-transform ease-in-out duration-500 w-full"
+                className="group-hover:scale-110 transition-transform ease-in-out duration-500 w-full h-full object-cover"
               />
             </div>
             <h1 className="text-black text-[20px] font-bold">{item?.title}</h1>

@@ -98,6 +98,30 @@ p {
   display: none;
 }
 
+/* Blog carousel — fluid slide widths, no fixed px */
+.blog-carousel-slide {
+  width: calc(100% - 0.5rem);
+  scroll-snap-align: center;
+}
+
+@media (min-width: 640px) {
+  .blog-carousel-slide {
+    width: calc(50% - 0.75rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .blog-carousel-slide {
+    width: calc(33.333% - 1rem);
+  }
+}
+
+@media (min-width: 1280px) {
+  .blog-carousel-slide {
+    width: calc(25% - 1.125rem);
+  }
+}
+
 @keyframes swing {
   0% {
     transform: translateY(0);

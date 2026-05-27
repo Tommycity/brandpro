@@ -10,16 +10,16 @@ export const RecentTeamActivities = () => {
         <div className="w-full md:w-full lg:w-[33%] h-full flex flex-col gap-4">
           <div className="h-[50%] overflow-hidden group rounded-lg">
             <img
-              src="/imgs/home/HOME--MDL-about_image.webp"
+              src="/imgs/new-images/booth-10.jpg"
               alt=""
-              className="h-full w-full group-hover:scale-110 transition-transform ease-in-out duration-500"
+              className="h-full w-full group-hover:scale-110 transition-transform ease-in-out duration-500 object-cover"
             />
           </div>
           <div className="h-[50%] overflow-hidden group rounded-lg">
             <img
-              src="/imgs/home/HOME-F1-about_image_two.webp"
+              src="/imgs/new-images/booth-09.jpg"
               alt=""
-              className="h-full w-full hoveringEffect"
+              className="h-full w-full hoveringEffect object-cover"
             />
           </div>
         </div>
@@ -27,9 +27,9 @@ export const RecentTeamActivities = () => {
         {/* Middle */}
         <div className="w-full md:w-full lg:w-[33%] h-full group overflow-hidden rounded-lg">
           <img
-            src="/imgs/home/ChiefFinancialOfficer.webp"
+            src="/imgs/new-images/BP-team.jpg"
             alt=""
-            className="h-full hoveringEffect w-full"
+            className="h-full hoveringEffect w-full cover"
           />
         </div>
 
@@ -37,14 +37,14 @@ export const RecentTeamActivities = () => {
           <div className="flex flex-col lg:flex-row gap-3 h-[50%] w-full">
             <div className="h-full lg:w-[50%] overflow-hidden group rounded-lg">
               <img
-                src="/imgs/home/HOME--MDL-about_image.webp"
+                src="/imgs/new-images/booth-07.jpg"
                 alt=""
                 className="h-full w-full group-hover:scale-110 transition-transform ease-in-out duration-500"
               />
             </div>
             <div className="h-full lg:w-[50%] overflow-hidden group rounded-lg">
               <img
-                src="/imgs/home/HOME--MDL-about_image.webp"
+                src="/imgs/new-images/booth-06.jpg"
                 alt=""
                 className="h-full w-full group-hover:scale-110 transition-transform ease-in-out duration-500"
               />
@@ -53,9 +53,9 @@ export const RecentTeamActivities = () => {
 
           <div className="h-full lg:h-[50%] overflow-hidden group rounded-lg">
             <img
-              src="/imgs/home/HOME-F1-about_image_two.webp"
+              src="/imgs/new-images/booth-05.jpg"
               alt=""
-              className="h-full w-full hoveringEffect"
+              className="h-full w-full hoveringEffect object-fill"
             />
           </div>
         </div>

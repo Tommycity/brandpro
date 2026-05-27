@@ -25,9 +25,9 @@ export const Production_housePage = () => {
             className="w-full lg:w-[100%] mx-auto items-center bg-white flex flex-col gap-4  rounded-2xl mt-10 lg:mt-0"
           >
             <img
-              src={`/imgs/home/${item?.image}`}
+              src={`/imgs/new-images/${item?.image}`}
               alt=""
-              className=" rounded-t-2xl w-full"
+              className=" rounded-t-2xl w-full h-[300px] object-cover"
             />
             <div className="px-3 pb-9 flex flex-col gap-2 md:w-full">
               <h1 className="font-bold text-[18px] md:text-2xl lg:text-[18px]">
@@ -79,12 +79,12 @@ export const Production_housePage = () => {
         {aboutPageCardTwo?.map((item, i) => (
           <div
             key={i}
-            className="w-full lg:w-[100%] mx-auto items-center bg-white flex flex-col gap-4  rounded-2xl"
+            className="w-full lg:w-[100%] mx-auto items-center bg-white flex flex-col gap-4 rounded-2xl"
           >
             <img
-              src={`/imgs/home/${item?.image}`}
+              src={`/imgs/new-images/${item?.image}`}
               alt=""
-              className="w-full rounded-t-2xl"
+              className="w-full rounded-t-2xl h-[300px] object-cover"
             />
             <div className="px-3 pb-9 flex flex-col gap-2 md:w-full">
               <h1 className="font-bold text-[18px] md:text-2xl lg:text-[18px]">

@@ -20,7 +20,7 @@ export const BrandEverywhere = () => {
           <div key={i} className="flex w-full flex-col gap-3">
             <div className="group overflow-hidden lg:h-[400px]">
               <img
-                src={`/imgs/home/${item.image}`}
+                src={`/imgs/new-images/${item.image}`}
                 alt=""
                 className="group-hover:scale-110 transition-transform ease-in-out duration-500 h-full  w-full"
               />

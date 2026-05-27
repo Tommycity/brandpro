@@ -53,21 +53,21 @@ export const UnwaveringCommitmentPage = () => {
       <div className="relative w-full flex flex-col lg:flex-row items-center gap-5">
         <div className="w-full lg:w-[35%] h-[370px] rounded-3xl overflow-hidden">
           <img
-            src="/imgs/home/HOME--MDL-about_image.webp"
+            src="/imgs/new-images/BP-team.jpg"
             alt=""
-            className="w-full h-full rounded-3xl transition-transform duration-500 hover:scale-110"
+            className="w-full h-full rounded-3xl transition-transform duration-500 hover:scale-110 object-cover"
           />
         </div>
 
         <div className="w-full lg:w-[65%] h-[370px] rounded-3xl overflow-hidden">
           <img
-            src="/imgs/home/HOME-F1-about_image_two.webp"
+            src="/imgs/new-images/booth-01.jpg"
             alt=""
-            className="w-full h-full rounded-3xl transition-transform duration-500 hover:scale-110"
+            className="w-full h-full rounded-3xl transition-transform duration-500 hover:scale-110 object-cover"
           />
         </div>
 
-        <div className="absolute top-[320px] lg:top-[120px] lg:left-[465px] flex items-center justify-center">
+        <div className="absolute top-[320px] lg:top-[120px] lg:left-[465px] xl:left-[600px] flex items-center justify-center">
           <span className="absolute w-24 h-24 rounded-s-2xl rounded-tr-2xl bg-white opacity-30 animate-ripple"></span>
           <img
             src="/imgs/home/play-circle.svg"

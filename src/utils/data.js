@@ -51,47 +51,47 @@ export const motto = [
 
 export const bouquetOfService = [
   {
-    image: "card-1-bouquet.webp",
+    image: "booth-02.jpg",
     title: "event management",
     url: "/event-management",
   },
   {
-    image: "card-2-bouquet.webp",
+    image: "booth-03.jpg",
     title: "exhibition stand builder",
     url: "/exhibition-stand-builder",
   },
   {
-    image: "card-3-bouquet.webp",
+    image: "booth-04.jpg",
     title: "indoor and outdoor branding",
     url: "/indoor-and-outdoor-branding",
   },
   {
-    image: "card-1-bouquet.webp",
+    image: "booth-05.jpg",
     title: "booth fabrication",
     url: "/booth-fabrication",
   },
   {
-    image: "card-2-bouquet.webp",
+    image: "booth-09.jpg",
     title: "signages",
     url: "/signages",
   },
   {
-    image: "card-3-bouquet.webp",
+    image: "booth-13a.jpg",
     title: "premium podiums",
     url: "/premium-podiums",
   },
   {
-    image: "card-1-bouquet.webp",
+    image: "booth-13b.jpg",
     title: "display stand manufacturer",
     url: "/display-stand-manufacturer",
   },
   {
-    image: "card-2-bouquet.webp",
+    image: "booth-09.jpg",
     title: "vehicle branding",
     url: "/vehicle-branding",
   },
   {
-    image: "card-3-bouquet.webp",
+    image: "booth-10.jpg",
     title: "flag, pop up, roll up",
     url: "/flag-pop-up-roll-up",
   },
@@ -99,39 +99,39 @@ export const bouquetOfService = [
 
 export const sliderImage = [
   {
-    image: "card-1-bouquet.webp",
+    image: "booth-03.jpg",
     url: "/card-1-bouquet",
   },
   {
-    image: "card-2-bouquet.webp",
+    image: "booth-01.jpg",
     url: "/card-2-bouquet",
   },
   {
-    image: "card-3-bouquet.webp",
+    image: "booth-02.jpg",
     url: "/card-3-bouquet",
   },
   {
-    image: "card-1-bouquet.webp",
+    image: "booth-04.jpg",
     url: "/card-1-bouquet",
   },
   {
-    image: "card-2-bouquet.webp",
+    image: "booth-05.jpg",
     url: "/card-2-bouquet",
   },
   {
-    image: "card-3-bouquet.webp",
+    image: "booth-06.jpg",
     url: "/card-3-bouquet",
   },
   {
-    image: "card-1-bouquet.webp",
+    image: "booth-07.jpg",
     url: "/card-1-bouquet",
   },
   {
-    image: "card-2-bouquet.webp",
+    image: "booth-08.jpg",
     url: "/card-2-bouquet",
   },
   {
-    image: "card-3-bouquet.webp",
+    image: "booth-10.jpg",
     url: "/card-3-bouquet",
   },
 ];
@@ -169,61 +169,51 @@ export const events = [
 export const blogs = [
   {
     title: "How Digital Screens Enhance Exhibition Booth Experiences",
-    image: "card-1-bouquet.webp",
+    image: "booth-03.jpg",
 
     link: "/digital-screens-exhibition",
   },
   {
     title: "How to Improve Your Exhibition Stand for the Next Event",
-    image: "card-1-bouquet.webp",
+    image: "booth-04.jpg",
     link: "/improve-exhibition-stand",
   },
   {
     title: "The Future of Outdoor Advertising in Saudi Arabia: Trends to Watch",
-    image: "card-1-bouquet.webp",
+    image: "booth-05.jpg",
     link: "/outdoor-advertising-trends",
   },
   {
     title: "The Future of Outdoor Advertising in Saudi Arabia: Trends to Watch",
-    image: "card-1-bouquet.webp",
+    image: "booth-07.jpg",
     link: "/outdoor-advertising-trends",
   },
   {
     title: "The Future of Outdoor Advertising in Saudi Arabia: Trends to Watch",
-    image: "card-1-bouquet.webp",
+    image: "booth-06.jpg",
     link: "/outdoor-advertising-trends",
   },
   {
     title: "The Future of Outdoor Advertising in Saudi Arabia: Trends to Watch",
-    image: "card-1-bouquet.webp",
+    image: "booth-01.jpg",
     link: "/outdoor-advertising-trends",
   },
   {
     title: "The Future of Outdoor Advertising in Saudi Arabia: Trends to Watch",
-    image: "card-1-bouquet.webp",
+    image: "booth-10.jpg",
     link: "/outdoor-advertising-trends",
   },
   {
     title: "The Future of Outdoor Advertising in Saudi Arabia: Trends to Watch",
-    image: "card-1-bouquet.webp",
-    link: "/outdoor-advertising-trends",
-  },
-  {
-    title: "The Future of Outdoor Advertising in Saudi Arabia: Trends to Watch",
-    image: "card-1-bouquet.webp",
-    link: "/outdoor-advertising-trends",
-  },
-  {
-    title: "The Future of Outdoor Advertising in Saudi Arabia: Trends to Watch",
-    image: "card-1-bouquet.webp",
-    link: "/outdoor-advertising-trends",
-  },
+    image: "topview-booth.jpg",
+    link: "/outdoor-advertising-trends"
+  }
 ];
 
 export const contacts = [
   {
     country: "Egypt",
-    image: "card-1-bouquet.webp",
+    image: "booth-08.jpg",
     email: "info@tss-adv.com",
     phone: "+20 11280 00619",
     address: [
@@ -235,7 +225,7 @@ export const contacts = [
   },
   {
     country: "Oman",
-    image: "card-1-bouquet.webp",
+    image: "booth-09.jpg",
     email: "info@tss-adv.com",
     phone: "+968 9099 0619",
     address: [
@@ -247,7 +237,7 @@ export const contacts = [
   },
   {
     country: "Oman",
-    image: "card-1-bouquet.webp",
+    image: "booth-01.jpg",
     email: "info@tss-adv.com",
     phone: "+968 9099 0619",
     address: [
@@ -259,7 +249,7 @@ export const contacts = [
   },
   {
     country: "Oman",
-    image: "card-1-bouquet.webp",
+    image: "booth-02.jpg",
     email: "info@tss-adv.com",
     phone: "+968 9099 0619",
     address: [
@@ -271,7 +261,7 @@ export const contacts = [
   },
   {
     country: "Oman",
-    image: "card-1-bouquet.webp",
+    image: "booth-03.jpg",
     email: "info@tss-adv.com",
     phone: "+968 9099 0619",
     address: [
@@ -283,7 +273,7 @@ export const contacts = [
   },
   {
     country: "Oman",
-    image: "card-1-bouquet.webp",
+    image: "booth-04.jpg",
     email: "info@tss-adv.com",
     phone: "+968 9099 0619",
     address: [
@@ -295,7 +285,7 @@ export const contacts = [
   },
   {
     country: "Oman",
-    image: "card-1-bouquet.webp",
+    image: "booth-05.jpg",
     email: "info@tss-adv.com",
     phone: "+968 9099 0619",
     address: [
@@ -307,7 +297,7 @@ export const contacts = [
   },
   {
     country: "Oman",
-    image: "card-1-bouquet.webp",
+    image: "booth-06.jpg",
     email: "info@tss-adv.com",
     phone: "+968 9099 0619",
     address: [
@@ -319,7 +309,7 @@ export const contacts = [
   },
   {
     country: "Oman",
-    image: "card-1-bouquet.webp",
+    image: "booth-07.jpg",
     email: "info@tss-adv.com",
     phone: "+968 9099 0619",
     address: [
@@ -331,7 +321,7 @@ export const contacts = [
   },
   {
     country: "Oman",
-    image: "card-1-bouquet.webp",
+    image: "booth-09.jpg",
     email: "info@tss-adv.com",
     phone: "+968 9099 0619",
     address: [
@@ -343,7 +333,7 @@ export const contacts = [
   },
   {
     country: "Oman",
-    image: "card-1-bouquet.webp",
+    image: "booth-10.jpg",
     email: "info@tss-adv.com",
     phone: "+968 9099 0619",
     address: [
@@ -355,7 +345,7 @@ export const contacts = [
   },
   {
     country: "Oman",
-    image: "card-1-bouquet.webp",
+    image: "booth-13b.jpg",
     email: "info@tss-adv.com",
     phone: "+968 9099 0619",
     address: [
@@ -368,12 +358,13 @@ export const contacts = [
 ];
 
 export const images = [
-  "card-1-bouquet.webp",
-  "card-2-bouquet.webp",
-  "card-3-bouquet.webp",
-  "HOME--MDL-about_image.webp",
-  "HOME-F1-about_image_two.webp",
-  "tss-logo-logo_headers_preview.webp",
+  "booth-07.jpg",
+  "booth-08.jpg",
+  "multiple-booth.jpg",
+  "topview-booth.jpg",
+  "booth-13a.jpg",
+  "booth-05.jpg",
+  "booth-04.jpg",
 ];
 
 export const footerQuickLinks = [
@@ -492,7 +483,7 @@ export const aboutPageTeamSection = [
 
 export const aboutPageCard = [
   {
-    image: "card1-about-us.webp",
+    image: "booth-03.jpg",
     title: "Continued Expansion and Regional Presence",
     description: [
       "- Entry into Qatar 2021",
@@ -502,19 +493,19 @@ export const aboutPageCard = [
     ],
   },
   {
-    image: "card2-about-us.webp",
+    image: "booth-02.jpg",
     title: "Regional Growth and Market Entry",
     description: ["- Expansion to Dubai 2017", "- Entry into Bahrain 2020"],
   },
   {
-    image: "card3-about-us.webp",
+    image: "booth-08.jpg",
     title: "Digital Transformation",
     description: ["- Adoption of Digital Marketing 2019"],
   },
 ];
 export const aboutPageCardTwo = [
   {
-    image: "card1-about-us.webp",
+    image: "booth-01.jpg",
     title: "Inception and Expansion",
     description: [
       "- Launch in Jeddah 2008",
@@ -522,7 +513,7 @@ export const aboutPageCardTwo = [
     ],
   },
   {
-    image: "card2-about-us.webp",
+    image: "booth-10.jpg",
     title: "Diversification and Technological Advancements",
     description: [
       "- Venture into events and exhibitions 2010",
@@ -531,7 +522,7 @@ export const aboutPageCardTwo = [
     ],
   },
   {
-    image: "card3-about-us.webp",
+    image: "multiple-booth.jpg",
     title: "Brand Enhancement and Creative Focus",
     description: [
       "- Establishment of Signages Division 2015",
@@ -542,51 +533,51 @@ export const aboutPageCardTwo = [
 
 export const brandEverywhereData = [
   {
-    image: "card-1-bouquet.webp",
+    image: "booth-01.jpg",
     title: "Event Management",
   },
   {
-    image: "card-2-bouquet.webp",
+    image: "booth-02.jpg",
     title: "Exhibition Stand Builder",
   },
   {
-    image: "card-3-bouquet.webp",
+    image: "booth-03.jpg",
     title: "Indoor and Outdoor Branding",
   },
   {
-    image: "card-2-bouquet.webp",
+    image: "booth-04.jpg",
     title: "Signages",
   },
   {
-    image: "card-1-bouquet.webp",
+    image: "booth-05.jpg",
     title: "Event Management",
   },
   {
-    image: "card-2-bouquet.webp",
+    image: "booth-06.jpg",
     title: "Exhibition Stand Builder",
   },
   {
-    image: "card-3-bouquet.webp",
+    image: "booth-07.jpg",
     title: "Indoor and Outdoor Branding",
   },
   {
-    image: "card-2-bouquet.webp",
+    image: "booth-08.jpg",
     title: "Signages",
   },
   {
-    image: "card-1-bouquet.webp",
+    image: "booth-09.jpg",
     title: "Event Management",
   },
   {
-    image: "card-2-bouquet.webp",
+    image: "booth-10.jpg",
     title: "Exhibition Stand Builder",
   },
   {
-    image: "card-3-bouquet.webp",
+    image: "solis-booth.jpg",
     title: "Indoor and Outdoor Branding",
   },
   {
-    image: "card-2-bouquet.webp",
+    image: "topview-booth.jpg",
     title: "Signages",
   },
 ];
@@ -654,73 +645,73 @@ export const portfoliaCardData = [
   {
     title: "WELLBEING",
     subtile: "EXHIBITION BOOTH",
-    image: "portfolio-1.webp",
+    image: "booth-06.jpg",
     url: "/",
   },
   {
     title: "LilyHome",
     subtile: "EXHIBITION BOOTH",
-    image: "portfolio-2.webp",
+    image: "booth-05.jpg",
     url: "/",
   },
   {
     title: "ELIA",
     subtile: "EVENTS",
-    image: "portfolio-3.webp",
+    image: "booth-04.jpg",
     url: "/",
   },
   {
     title: "WELLBEING",
     subtile: "EXHIBITION BOOTH",
-    image: "portfolio-1.webp",
+    image: "booth-03.jpg",
     url: "/",
   },
   {
     title: "LilyHome",
     subtile: "EXHIBITION BOOTH",
-    image: "portfolio-2.webp",
+    image: "booth-02.jpg",
     url: "/",
   },
   {
     title: "ELIA",
     subtile: "EVENTS",
-    image: "portfolio-3.webp",
+    image: "booth-01.jpg",
     url: "/",
   },
   {
     title: "WELLBEING",
     subtile: "EXHIBITION BOOTH",
-    image: "portfolio-1.webp",
+    image: "booth-07.jpg",
     url: "/",
   },
   {
     title: "LilyHome",
     subtile: "EXHIBITION BOOTH",
-    image: "portfolio-2.webp",
+    image: "booth-08.jpg",
     url: "/",
   },
   {
     title: "ELIA",
     subtile: "EVENTS",
-    image: "portfolio-3.webp",
+    image: "booth-10.jpg",
     url: "/",
   },
   {
     title: "WELLBEING",
     subtile: "EXHIBITION BOOTH",
-    image: "portfolio-1.webp",
+    image: "booth-13a.jpg",
     url: "/",
   },
   {
     title: "LilyHome",
     subtile: "EXHIBITION BOOTH",
-    image: "portfolio-2.webp",
+    image: "multiple-booth.jpg",
     url: "/",
   },
   {
     title: "ELIA",
     subtile: "EVENTS",
-    image: "portfolio-3.webp",
+    image: "topview-booth.jpg",
     url: "/",
   },
 ];

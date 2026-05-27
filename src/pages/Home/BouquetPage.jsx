@@ -17,12 +17,12 @@ export const BouquetPage = () => {
           <Link
             to={item?.url}
             key={i}
-            className="relative overflow-hidden  mt-6 lg:mt-12"
+            className="relative overflow-hidden  mt-6 lg:mt-12 h-[500px]"
           >
             <img
-              src={`/imgs/home/${item?.image}`}
+              src={`/imgs/new-images/${item?.image}`}
               alt=""
-              className="hover:scale-110 transition-transform duration-700 md:w-full"
+              className="hover:scale-110 transition-transform duration-700 md:w-full h-full object-cover"
             />
 
             <h3 className="absolute text-center  lg:text-center bottom-4 font-medium text-[16px] md:text-2xl lg:text-xl w-full text-white uppercase">

@@ -27,14 +27,13 @@ export const Herosection = () => {
         </div>
 
         <span className="text-white text-[15px] md:text-[17px]">
-          The Fastest Growing Indoor and Outdoor Advertising Agency in the
-          middle East.
+          The Fastest Growing Exhibition Booth Construction and Event Branding Company in West Africa.
         </span>
 
         <div className="flex gap-8 lg:gap-20">
           <div className="flex flex-col text-[#c74e45]">
             <span className="text-[19px] md:text-[40px] lg:text-[40px] font-bold">
-              +
+              10000+
             </span>
             <span className="text-[19px] md:text-[30px] lg:text-[40px] font-bold">
               Projects
@@ -48,14 +47,7 @@ export const Herosection = () => {
               Clients
             </span>
           </div>
-          <div className="flex flex-col text-[#c74e45]">
-            <span className="text-[19px] md:text-[30px] lg:text-[40px] font-bold">
-              8+
-            </span>
-            <span className="text-[19px] md:text-[30px] lg:text-[40px] font-bold">
-              Countries
-            </span>
-          </div>
+          
         </div>
 
         <div className="flex gap-4 mt-4">

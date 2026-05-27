@@ -5,24 +5,28 @@ export const ArtOfImpactingpage = () => {
   return (
     <div className="flex flex-col gap-4 lg:gap-8 px-6 lg:p-8 lg:my-16 pb-7">
       <h1 className="text-black text-3xl md:text-5xl lg:text-5xl font-medium">
-        The Art Of Impacting
+        We Don’t Just Build Booths.
       </h1>
 
-      <p className="text-[16px] md:text-[17px]">
-        TSS Advertising Company has its roots all over the GCC and has grown to
-        dominance over the years. We are a premier partner for events,
-        exhibitions, promotions, company branding, and more advertising
-        services, with a vision to be a global leader in the businesses we
-        operate.
+      <p className="text-[16px] md:text-[17px] xl:text-[22px]">
+        We Create Exhibition Experiences That Make Brands Impossible to Ignore.
       </p>
 
-      <p className="text-[16px] md:text-[17px]">
-        We tend to the marketing/advertising needs of the region through our
-        eager teams finding their thrill in innovating ways to deliver your
-        message across; whether it be on the slightest tip of a pen or
-        full-fledged events & exhibition stands, we do it all. <br />
-        Exhibition stand builders and contractors in Saudi Arabia, Dubai, Egypt,
-        Oman, and Bahrain.
+      <p className="text-[16px] md:text-[17px] xl:text-[22px] text-justify">
+        At Brandpro Exhibition Event Company Limited, we help businesses stand
+        out at trade shows, exhibitions, conferences, and corporate events
+        through professional Shell Scheme Booths, custom exhibition stands,
+        event branding, and experiential setup solutions. From standard booth
+        systems to fully customized exhibition environments, we deliver clean
+        execution, strong visual impact, and reliable project delivery that
+        gives exhibitors confidence and organizers peace of mind. Whether you’re
+        planning a trade fair, industry expo, corporate showcase, or conference,
+        Brandpro is your trusted exhibition execution partner.
+      </p>
+
+      <p className="text-[16px] md:text-[17px] xl:text-[22px]">
+        Explore our projects. See what we’ve built. Imagine what we can create
+        for your next event.
       </p>
 
       <div className="flex flex-col lg:flex-row  lg:justify-between md:items-center">
@@ -44,21 +48,21 @@ export const ArtOfImpactingpage = () => {
       <div className="relative w-full flex flex-col lg:flex-row items-center gap-5">
         <div className="w-full lg:w-[35%] h-[370px] rounded-3xl overflow-hidden">
           <img
-            src="/imgs/home/HOME--MDL-about_image.webp"
+            src="/imgs/new-images/BP-team.jpg"
             alt=""
-            className="w-full h-full rounded-3xl transition-transform duration-500 hover:scale-110"
+            className="w-full h-full rounded-3xl transition-transform duration-500 hover:scale-110 object-cover"
           />
         </div>
 
         <div className="w-full lg:w-[65%] h-[370px] rounded-3xl overflow-hidden">
           <img
-            src="/imgs/home/HOME-F1-about_image_two.webp"
+            src="/imgs/new-images/booth-01.jpg"
             alt=""
-            className="w-full h-full rounded-3xl transition-transform duration-500 hover:scale-110"
+            className="w-full h-full rounded-3xl transition-transform duration-500 hover:scale-110 object-cover"
           />
         </div>
 
-        <div className="absolute top-[320px] lg:top-[140px] lg:left-[465px] flex items-center justify-center">
+        <div className="absolute top-[320px] lg:top-[140px] lg:left-[465px] xl:left-[600px] flex items-center justify-center">
           <span className="absolute w-24 h-24 rounded-s-2xl rounded-tr-2xl bg-white opacity-30 animate-ripple"></span>
           <img
             src="/imgs/home/play-circle.svg"
