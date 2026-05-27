@@ -62,7 +62,7 @@ export const ArtOfImpactingpage = () => {
           />
         </div>
 
-        <div className="absolute top-[320px] lg:top-[140px] lg:left-[465px] xl:left-[600px] flex items-center justify-center">
+        <div className="absolute top-[320px] lg:top-[140px] lg:left-[465px] xl:left-[500px] flex items-center justify-center">
           <span className="absolute w-24 h-24 rounded-s-2xl rounded-tr-2xl bg-white opacity-30 animate-ripple"></span>
           <img
             src="/imgs/home/play-circle.svg"

@@ -13,11 +13,10 @@ export const Portfolio = () => {
       <div className="marquee-container w-full h-[200px] lg:h-[350px]  mb-8">
         <div className="marquee-track-to-left h-full">
           {images?.map((item, i) => {
-            console.log("images", images?.[i])
-            return(
+            return (
               <img
                 key={i}
-              src={`/public/imgs/new-images/${images?.[i]}`}
+                src={`/imgs/new-images/${images?.[i]}`}
                 alt="marquee-img"
                 className="marquee-img object-cover"
               />
@@ -31,7 +30,7 @@ export const Portfolio = () => {
           {images?.map((item, i) => (
             <img
               key={i}
-              src={`/public/imgs/new-images/${images?.[i]}`}
+              src={`/imgs/new-images/${images?.[i]}`}
               alt="marquee-img"
               className="marquee-img object-cover"
             />
