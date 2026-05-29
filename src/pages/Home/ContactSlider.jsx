@@ -1,70 +1,43 @@
 import { useRef, useEffect } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { contacts } from "../../utils/data";
 import { useCarousel } from "../../hooks/useCarousel";
+import { FaHouseUser } from "react-icons/fa";
+import { MdAttachEmail, MdPhoneInTalk } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
 
 export const ContactSlider = () => {
-  const { current, goTo, prev, next, canPrev, canNext } = useCarousel(
-    contacts.length,
-    4000, 
-  );
-
   return (
     <div className="px-8 pb-8 py-20">
-      <h2 className="text-4xl font-bold mb-18 text-[#282A39] text-center">
+      <h2 className="text-4xl font-bold mb-4 text-[#282A39] text-center">
         We are Located At
       </h2>
 
-      <div
-        className="flex gap-4 transition-transform duration-[450ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
-        style={{ transform: `translateX(-${current * 108}%)` }}
-      >
-        {contacts.map((contact, i) => (
-          <div
-            key={i}
-            className="shrink-0 px-2 w-full sm:w-1/3 lg:w-1/5 rounded-3xl border border-gray-300 p-6 shadow-md  "
-          >
-            <div className="flex justify-center mb-4 mt-10  ">
-              <div className="bg-gray-200 mt-10 w-28 h-28 swing rounded-full items-center flex justify-center absolute -top-16 z-100">
-                <img
-                  src={`/imgs/new-images/${contact.image}`}
-                  alt={contact.country}
-                  className="w-20 h-20 rounded-full"
-                />
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold text-center mb-2">
-              {contact.country}
-            </h3>
-            <p className="text-sm text-center mb-1">{contact.email}</p>
-            <p className="text-sm text-center mb-1">{contact.phone}</p>
-            <div className="text-sm text-center text-gray-600">
-              {contact.address.map((line, idx) => (
-                <p key={idx}>{line}</p>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:text-2xl lg:gap-4 rounded-md border border-gray-300 p-4 shadow-md">
+        <div className="flex items-center gap-2 hover:bg-gray-100 p-4 rounded-md transition-colors duration-300">
+          <FaHouseUser className="lg:text-[22px]" />
+          <span>Lagos, Nigeria </span>
+        </div>
 
-      {/* Navigation Arrows */}
-      <div className="flex justify-center gap-8 mt-8">
-        <button
-          onClick={prev}
-          disabled={!canPrev}
-          className="bg-white border border-gray-300 rounded-full p-4 shadow-md hover:bg-orange-600"
-          aria-label="Scroll Left"
-        >
-          <FaArrowLeft className="text-black h-5 w-5" />
-        </button>
-        <button
-          onClick={next}
-          disabled={!canNext}
-          className="bg-white border border-gray-300 rounded-full p-4 shadow-md hover:bg-orange-600"
-          aria-label="Scroll Right"
-        >
-          <FaArrowRight className="text-black h-5 w-5" />
-        </button>
+        <div className="flex items-center gap-4 hover:bg-gray-100 p-4 rounded-md transition-colors duration-300">
+          <MdAttachEmail className="lg:text-[22px]" />
+          <div className="flex flex-col">
+            <span>Brandproexhibition@gmail.com</span>
+            <span>Info @brandproexhibition.com</span>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2 hover:bg-gray-100 p-4 rounded-md transition-colors duration-300">
+          <MdPhoneInTalk className="lg:text-[22px]" />
+          <span>+234 808 312 4442</span>
+        </div>
+
+        <div className="flex items-center gap-4 hover:bg-gray-100 p-4 rounded-md transition-colors duration-300">
+          <IoLocationOutline className="lg:text-[22px]" />
+          <div className="flex flex-col">
+            <span>17, Awe Street, Somolu, Lagos</span>
+            <span>7, Bailey Street, Somolu Lagos</span>
+          </div>
+        </div>
       </div>
     </div>
   );

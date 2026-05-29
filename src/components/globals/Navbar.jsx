@@ -46,9 +46,9 @@ export const Navbar = () => {
       }`}
     >
       {/* logo */}
-      <div className=" w-[30%] lg:w-[10%]">
+      <div className=" w-[20%] md:w-[10%]">
         <img
-          src="/public/imgs/new-images/BP_white_logo.png"
+          src="/imgs/new-images/BP_white_logo.png"
           alt=""
           className="w-[100px]"
         />

@@ -23,60 +23,19 @@ export const Footer = () => {
       {/* top-footer-section */}
       <div className="flex flex-col md:items-center lg:flex-row lg:items-center gap-3 lg:gap-0 justify-between py-9 lg:py-6">
         <Appbuttontransparent title="BUSINESS ENQUIRY" />
-
-        {/* middle Input */}
-        <FooterInputButton placeholder="Subscribe to our newsletter" />
-
-        <div className="flex gap-3">
-          <Link
-            to="/travel"
-            className="flex gap-2 items-center uppercase header-menu-link"
-          >
-            <FaGlobeAfrica className="" />
-            <span className="">Travel</span>
-          </Link>
-
-          <div className="border-r-[#212323] border-r-[1px]"></div>
-
-          <div className="relative">
-            <div
-              className="flex items-center gap-1 cursor-pointer header-menu-link"
-              onClick={() => setshowMenuDropdown2(!showMenuDropdown2)}
-            >
-              <span className="">SAUDI</span>
-              <TiArrowSortedDown className="" />
-            </div>
-
-            <div
-              className={
-                showMenuDropdown2
-                  ? "absolute bg-white shadow-2xl py-3 px-2 rounded-md text-black flex flex-col gap-1 top-[30px] -left-2 z-10"
-                  : "hidden"
-              }
-            >
-              {rightMenuData?.map((item, i) => (
-                <Link to={item?.url} key={i} className="text-[10px]">
-                  {item.title}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* middle-footer-section */}
-      <div className="py-12 w-full gap-9 lg:gap-0 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 border-y-[1px] border-stone-500">
+      <div className="py-12 w-full gap-9 lg:gap-0 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-4 border-y-[1px] border-stone-500">
         {/* left-column */}
         <div className="flex flex-col col-span-2 gap-5 lg:gap-7 w-full lg:w-[80%]">
           <img
-            src="/imgs/home/tss-logo-logo_headers_preview.webp"
+            src="/imgs/new-images/BP_gold_logo.png"
             alt=""
-            className="h-[60px] w-[150px]"
+            className="h-[80px] w-[100px]"
           />
           <p className="text-[16px]">
-            TSS Advertising Company was established in the year 2008 with a
-            comprehensive and an extensive vision to cater the needs of the
-            advertising industry in the Middle East.
+            Brandpro Exhibition Event Company Limited  was established in the year 2020 with a comprehensive and an extensive vision to cater the needs of the exhibition industry in the Africa
           </p>
 
           <div className="flex flex-col gap-4">
@@ -84,14 +43,14 @@ export const Footer = () => {
               <MdOutlineForwardToInbox className="text-xl" />
               <span className="mr-2">Email</span>
               <Link to="/" className="header-menu-link">
-                info@tss-adv.com
+                Brandproexhibition@gmail.com 
               </Link>
             </div>
             <div className="flex gap-1">
               <MdOutlineForwardToInbox className="text-xl" />
               <span className="mr-2">Phone</span>
               <Link to="/" className="header-menu-link">
-                +966 9200 00619
+                +234 808 312 4442
               </Link>
             </div>
           </div>
@@ -118,8 +77,8 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* middle-column */}
-        <div className="flex flex-col col-span-1 gap-4 lg:gap-7 w-full">
+        {/* right-column */}
+        <div className="flex flex-col col-span-2 gap-4 lg:gap-7 w-full">
           <h1 className="text-white font-semibold text-xl">Quick Links</h1>
           <div className="flex flex-col gap-3 w-full">
             {footerQuickLinks?.map((item, i) => (
@@ -134,17 +93,11 @@ export const Footer = () => {
             ))}
           </div>
         </div>
-
-        {/* right-column */}
-
-        <div className="w-full col-span-2">
-          <img src="/imgs/home/footer-map.png" alt="" />
-        </div>
       </div>
 
       {/* bottom-footer-section */}
       <div className="flex justify-center py-6">
-        <span>© 2025 TSS Advertising Company. All Rights Reserved.</span>
+        <span>© 2025 Brandpro Exhibition Limited. All Rights Reserved.</span>
       </div>
 
       {/* The-notification-buttons */}

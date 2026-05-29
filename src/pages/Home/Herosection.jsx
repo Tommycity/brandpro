@@ -33,15 +33,15 @@ export const Herosection = () => {
         <div className="flex gap-8 lg:gap-20">
           <div className="flex flex-col text-[#c74e45]">
             <span className="text-[19px] md:text-[40px] lg:text-[40px] font-bold">
-              10000+
+              1000+
             </span>
             <span className="text-[19px] md:text-[30px] lg:text-[40px] font-bold">
-              Projects
+              Events
             </span>
           </div>
           <div className="flex flex-col text-[#c74e45]">
             <span className="text-[19px] md:text-[30px] lg:text-[40px] font-bold">
-              5000+
+              100+
             </span>
             <span className="text-[19px] md:text-[30px] lg:text-[40px] font-bold">
               Clients
