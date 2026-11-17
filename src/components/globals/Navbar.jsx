@@ -25,6 +25,11 @@ export const Navbar = () => {
     setDropdownOpen((prev) => (prev === key ? null : key));
   };
 
+  const closeMobileMenu = () => {
+    setDropdownOpen(null);
+    setSubmenuOpenIndex(null);
+  };
+
   useEffect(() => {
     const handleClick = (e) => {
       if (
@@ -144,7 +149,7 @@ export const Navbar = () => {
       <div
         className={
           dropdownOpen && dropdownOpen === "menu"
-            ? "absolute top-2 md:right-4 md:mr-0 mx-auto bg-white w-[100%] md:w-[50vw] flex items-start justify-between text-black py-5 px-5 lg:hidden "
+            ? "absolute top-2 md:right-4 md:mr-0 mx-auto bg-white w-[100%] md:w-[50vw] flex items-start justify-between text-black py-5 px-5 lg:hidden dropdown-content"
             : "hidden"
         }
       >
@@ -177,6 +182,7 @@ export const Navbar = () => {
                         <Link
                           key={childIndex}
                           to={childItem?.url}
+                          onClick={closeMobileMenu}
                           className="flex flex-col text-[14px]"
                         >
                           {childItem?.title}
@@ -188,6 +194,7 @@ export const Navbar = () => {
                   <Link
                     className="flex uppercase header-menu-link"
                     to={item?.url}
+                    onClick={closeMobileMenu}
                   >
                     {item?.title}
                   </Link>
@@ -221,7 +228,12 @@ export const Navbar = () => {
                 }
               >
                 {rightMenuData?.map((item, i) => (
-                  <Link to={item?.url} key={i} className="text-[12px]">
+                  <Link
+                    to={item?.url}
+                    key={i}
+                    onClick={closeMobileMenu}
+                    className="text-[12px]"
+                  >
                     {item.title}
                   </Link>
                 ))}
@@ -230,6 +242,7 @@ export const Navbar = () => {
 
             <Link
               to="/travel"
+              onClick={closeMobileMenu}
               className="flex gap-2 items-center uppercase header-menu-link"
             >
               <FaGlobeAfrica className="" />
