@@ -15,7 +15,7 @@ export const ContactSlider = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:text-2xl lg:gap-4 rounded-md border border-gray-300 p-4 shadow-md">
         <div className="flex items-center gap-2 hover:bg-gray-100 p-4 rounded-md transition-colors duration-300">
           <FaHouseUser className="lg:text-[22px]" />
-          <span>Lagos,  </span>
+          <span>Lagos, Nigeria </span>
         </div>
 
         <div className="flex items-center gap-4 hover:bg-gray-100 p-4 rounded-md transition-colors duration-300">

@@ -5,7 +5,7 @@ import { Appbutton } from "../globals/Appbutton";
 import { TiArrowSortedDown } from "react-icons/ti";
 
 import { useEffect, useState } from "react";
-import { MdMenu } from "react-icons/md";
+import { MdMenu, MdClose } from "react-icons/md";
 
 // Navbar component
 export const Navbar = () => {
@@ -144,7 +144,7 @@ export const Navbar = () => {
       <div
         className={
           dropdownOpen && dropdownOpen === "menu"
-            ? "absolute top-2 right-1 left-1 md:right-4 md:mr-0 mx-auto bg-white w-[94vw] md:w-[50vw] flex items-start justify-between text-black py-5 px-5 lg:hidden "
+            ? "absolute top-2 md:right-4 md:mr-0 mx-auto bg-white w-[100%] md:w-[50vw] flex items-start justify-between text-black py-5 px-5 lg:hidden "
             : "hidden"
         }
       >
@@ -245,7 +245,7 @@ export const Navbar = () => {
           className="text-[#ff930f] text-4xl lg:hidden dropdown-trigger"
           onClick={() => toggleDropdown("menu")}
         >
-          <MdMenu />
+          {<MdClose />}
         </div>
       </div>
     </div>

@@ -206,8 +206,8 @@ export const blogs = [
   {
     title: "The Future of Outdoor Advertising in Saudi Arabia: Trends to Watch",
     image: "topview-booth.jpg",
-    link: "/outdoor-advertising-trends"
-  }
+    link: "/outdoor-advertising-trends",
+  },
 ];
 
 export const contacts = [
@@ -533,52 +533,85 @@ export const aboutPageCardTwo = [
 
 export const brandEverywhereData = [
   {
-    image: "booth-01.jpg",
-    title: "Event Management",
+    image: "IMG_0037.jpg",
+    title: "Custom Exhibition Booth",
+    galleryFolder: "custom-exhibition-booth",
+    galleryImages: [
+      "IMG_3648.jpg",
+      "IMG_3647.jpg",
+      "IMG_3628.jpg",
+      "IMG_3650.jpg",
+      "IMG_3651.jpg",
+      "IMG_3638.jpg",
+      "IMG_3639.jpg",
+      "IMG_3629.jpg",
+      "IMG_3654.jpg",
+      "IMG_3661.JPG",
+      "IMG_3659.JPG",
+      "IMG_2964.jpg",
+      "IMG_2966.jpg",
+      "IMG_2944.jpg",
+      "IMG_2943.jpg",
+      "IMG_3271.jpg",
+      "IMG_3267.jpg",
+      "IMG_3259.jpg",
+      "IMG_3255.jpg",
+      "IMG_3242.jpg",
+      "IMG_3251.jpg",
+      "IMG_3258.jpg",
+      "IMG_3252.jpg",
+      "IMG_3250.jpg",
+      "IMG_090814.jpg",
+      "IMG-WA0131.jpg",
+      "IMG_064402.jpg",
+      "IMG_120710.jpg",
+      "IMG_172508_Original.JPG",
+      "IMG_172241.jpg",
+      "IMG_172139_Original.JPG",
+      "IMG_172508_Original.JPG",
+      "IMG_120724_Original.JPG",
+      "IMG_0022.jpg ",
+      "IMG_0037.jpg",
+    ],
   },
   {
-    image: "booth-02.jpg",
-    title: "Exhibition Stand Builder",
+    image: "d8f38fd4e308.jpg",
+    title: "Display Stands",
+    galleryFolder: "display-stands",
+    galleryImages: [
+      "1af2d9f7d7b3.jpg",
+      "d440c8bddb1c.jpg",
+      "78832334f29b.jpg",
+      "d8f38fd4e308.jpg",
+    ],
   },
   {
     image: "booth-03.jpg",
-    title: "Indoor and Outdoor Branding",
+    title: "Indoor and Outdoor signage",
+    galleryFolder: "indoor-outdoor-signage",
+    galleryImages: ["booth-08.jpg", "booth-13a.jpg"],
   },
   {
-    image: "booth-04.jpg",
-    title: "Signages",
+    image: "942fa2c3f119.jpg",
+    title: "Point of Sale Material Fabrication",
+    galleryFolder: "point-of-sale-material",
+    galleryImages: ["942fa2c3f119.jpg", "Promotional-Table.png"],
   },
   {
-    image: "booth-05.jpg",
-    title: "Event Management",
-  },
-  {
-    image: "booth-06.jpg",
-    title: "Exhibition Stand Builder",
-  },
-  {
-    image: "booth-07.jpg",
-    title: "Indoor and Outdoor Branding",
-  },
-  {
-    image: "booth-08.jpg",
-    title: "Signages",
-  },
-  {
-    image: "booth-09.jpg",
-    title: "Event Management",
-  },
-  {
-    image: "booth-10.jpg",
-    title: "Exhibition Stand Builder",
-  },
-  {
-    image: "solis-booth.jpg",
-    title: "Indoor and Outdoor Branding",
-  },
-  {
-    image: "topview-booth.jpg",
-    title: "Signages",
+    image: "IMG-WA0152.jpg",
+    title: "Shell Scheme Booth Rental",
+    galleryFolder: "shell-scheme-booth",
+    galleryImages: [
+      "IMG_3248.jpg",
+      "IMG_3247.jpg",
+      "IMG-WA0152.jpg",
+      "0aa1f06c5ac7.jpg",
+      "IMG_1276.jpg",
+      "IMG_1275.jpg",
+      "IMG_084413.jpg",
+      "IMG-WA0140.jpg",
+      "IMG-WA0125.jpg",
+    ],
   },
 ];
 
