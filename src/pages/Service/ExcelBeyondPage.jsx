@@ -7,7 +7,7 @@ export const ExcelBeyondPage = () => {
         <img
           src="/imgs/new-images/booth-08.jpg"
           alt=""
-          className="w-full h-full transition-transform rotate-10 hover:rotate-0 ease-in-out duration-800 object-cover"
+          className="w-full h-full transition-transform lg:rotate-10 hover:rotate-0 ease-in-out duration-800 object-cover"
         />
       </div>
 

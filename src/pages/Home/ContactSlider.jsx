@@ -21,7 +21,7 @@ export const ContactSlider = () => {
         <div className="flex items-center gap-4 hover:bg-gray-100 p-4 rounded-md transition-colors duration-300">
           <MdAttachEmail className="lg:text-[22px]" />
           <div className="flex flex-col">
-            <span>Brandproexhibition@gmail.com</span>
+            <span className="break-all">Brandproexhibition@gmail.com</span>
             <span>Info @brandproexhibition.com</span>
           </div>
         </div>

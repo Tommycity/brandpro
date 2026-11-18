@@ -42,7 +42,7 @@ export const Footer = () => {
             <div className="flex items-center gap-1">
               <MdOutlineForwardToInbox className="text-xl" />
               <span className="mr-2">Email</span>
-              <Link to="/" className="header-menu-link">
+              <Link to="/" className="header-menu-link break-all">
                 Brandproexhibition@gmail.com 
               </Link>
             </div>

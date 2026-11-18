@@ -5,10 +5,10 @@ export const Global_Herosection = ({ title, fontSize, width, lineHeight }) => {
   return (
     <div className="about-us-hero-image w-full relative">
       <div className="flex flex-col items-center pb-[80px] pt-[150px] gap-7 lg:gap-8 w-full h-full p-5">
-        <div className="flex flex-col font-bold text-white leading-[45px] md:leading-[60px] lg:leading-[70px] z-10">
+        <div className="flex w-full flex-col font-bold text-white leading-[45px] md:leading-[60px] lg:leading-[70px] z-10">
           <span
-            style={{ fontSize: fontSize, width: width, lineHeight: lineHeight }}
-            className="text-[20px] w-[290px] leading-6 md:leading-12 lg:leading-none lg:w-[600px] md:text-[50px] lg:text-[50px] uppercase text-center"
+            style={{ fontSize: fontSize, maxWidth: width, lineHeight: lineHeight }}
+            className="text-[20px] w-full leading-6 md:leading-12 lg:leading-none md:text-[50px] lg:text-[50px] uppercase text-center"
           >
             {title}
           </span>

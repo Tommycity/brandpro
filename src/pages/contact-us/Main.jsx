@@ -25,7 +25,7 @@ export const Main = () => {
         </div>
       </div>
 
-      <div className="flex items-center mt-4 gap-5">
+      <div className="flex flex-wrap items-center mt-4 gap-3 md:gap-5">
         <span className="text-lg">Are you existing client</span>
         <span className="flex items-center gap-1">
           <div className="rounded-full h-3 w-3 bg-white"></div>
