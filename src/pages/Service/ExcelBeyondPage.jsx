@@ -5,7 +5,7 @@ export const ExcelBeyondPage = () => {
     <div className="p-5 md:p-20 lg:p-5 flex gap-20 lg:gap-40 flex-col lg:flex-row items-center w-full">
       <div className="w-full lg:w-[35%] bg-[#e1341c] lg:ml-30 h-[400px] md:h-[500px] lg:h-[600px]">
         <img
-          src="/imgs/new-images/booth-08.jpg"
+          src="/imgs/custom-exhibition-booth/IMG_3628.jpg"
           alt=""
           className="w-full h-full transition-transform lg:rotate-10 hover:rotate-0 ease-in-out duration-800 object-cover"
         />
